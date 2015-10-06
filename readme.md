@@ -55,7 +55,7 @@ function toArray(): Array<T>;
 #### toString
 Return the comments as a JSON string
 ```javascript
-function toString(): Array<T>;
+function toString(): string;
 ```
 
 ### License
