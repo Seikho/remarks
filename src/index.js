@@ -6,6 +6,7 @@ var Remarks = (function () {
         };
         this.parse = function (json) {
             _this.comments = _this.tryParse(json);
+            return _this.toArray();
         };
         this.toArray = function () {
             return JSON.parse(_this.toString());

@@ -14,6 +14,7 @@ class Remarks<T> implements Base<T> {
     
     parse = (json: string) => {
         this.comments = this.tryParse(json);
+        return this.toArray();
     }
         
     toArray = () => {

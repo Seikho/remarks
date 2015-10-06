@@ -3,7 +3,7 @@ declare class Remarks<T> {
     
     add(comment: T): void;    
     
-    parse(json?: string): void;
+    parse(json?: string): Array<T>;
     
     toArray(): Array<T>;
     
