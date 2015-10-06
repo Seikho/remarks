@@ -7,7 +7,7 @@ declare class Remarks<T> {
     
     toArray(): Array<T>;
     
-    toJson(): string;
+    toString(): string;
 }
 
 export { Remarks as default };
