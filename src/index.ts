@@ -1,4 +1,4 @@
-import Base from '../index.d.ts';
+import Base = require('../index.d.ts');
 
 class Remarks<T> implements Base<T> {
     
@@ -41,4 +41,4 @@ class Remarks<T> implements Base<T> {
     }
 }
 
-export { Remarks as default }
+export = Remarks;

@@ -32,5 +32,5 @@ var Remarks = (function () {
     };
     return Remarks;
 })();
-exports.default = Remarks;
+module.exports = Remarks;
 //# sourceMappingURL=index.js.map

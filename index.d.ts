@@ -10,4 +10,4 @@ declare class Remarks<T> {
     toString(): string;
 }
 
-export { Remarks as default };
+export = Remarks;
