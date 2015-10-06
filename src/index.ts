@@ -34,10 +34,9 @@ class Remarks<T> implements Base<T> {
             if (Array.isArray(comments))
                 return comments;
             
-            throw new Error('Comments did not parse to an array');
         }
         catch (ex) {
-            throw new Error(`Unable to parse comments: ${ex.message}`);
+            return null;
         }
     }
 }
