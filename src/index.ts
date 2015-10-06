@@ -3,7 +3,7 @@ import Base = require('../index.d.ts');
 class Remarks<T> implements Base<T> {
     
     constructors(json?: string) {
-        this.comments = this.tryParse(json);
+        this.comments = this.tryParse(json) || [];
     }
     
     comments: Array<T>;

@@ -16,7 +16,7 @@ var Remarks = (function () {
         };
     }
     Remarks.prototype.constructors = function (json) {
-        this.comments = this.tryParse(json);
+        this.comments = this.tryParse(json) || [];
     };
     Remarks.prototype.tryParse = function (json) {
         if (!json)
