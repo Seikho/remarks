@@ -1,6 +1,6 @@
 import Base from '../index.d.ts';
 
-export class Remarks<T> implements Base<T> {
+class Remarks<T> implements Base<T> {
     
     constructors(json?: string) {
         this.comments = this.tryParse(json);
@@ -40,3 +40,5 @@ export class Remarks<T> implements Base<T> {
         }
     }
 }
+
+export { Remarks as default }

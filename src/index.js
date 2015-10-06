@@ -4,10 +4,13 @@ var Remarks = (function () {
         this.add = function (comment) {
             _this.comments.push(comment);
         };
-        this.toArray = function () {
-            return JSON.parse(_this.toJson());
+        this.parse = function (json) {
+            _this.comments = _this.tryParse(json);
         };
-        this.toJson = function () {
+        this.toArray = function () {
+            return JSON.parse(_this.toString());
+        };
+        this.toString = function () {
             return JSON.stringify(_this.comments);
         };
     }
@@ -29,5 +32,5 @@ var Remarks = (function () {
     };
     return Remarks;
 })();
-exports.Remarks = Remarks;
+exports.default = Remarks;
 //# sourceMappingURL=index.js.map
