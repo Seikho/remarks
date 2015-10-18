@@ -1,6 +1,6 @@
 {
   "name": "remarks",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "JSON comments handling",
   "main": "src/index",
   "scripts": {
@@ -22,8 +22,6 @@
   },
   "homepage": "https://github.com/seikho/remarks#readme",
   "devDependencies": {
-    "chai": "^3.3.0",
-    "mocha": "^2.3.3",
     "typescript": "^1.6.2"
   }
 }
